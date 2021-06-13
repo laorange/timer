@@ -13,7 +13,7 @@
 </style>
 </head>
 
-<body bgcolor="#FFFFFF"  >
+<body bgcolor="#EFEFEF"  >
 
 <table width="100%" height="100%" border="0"   onmousedown="show('btn_tr')" style="cursor:pointer"  >
   <tr >
@@ -31,33 +31,35 @@
     <td>&nbsp;</td>
     <td>&nbsp;</td>
   </tr>
+  
   <tr>
     <td colspan="3" ><table width="100%" border="0" height="122" >
-      <tr id="btn_tr" style="display:block" >
-        <td width="15%" height="">&nbsp;</td>
-        <td width="70%" align="left" valign="bottom"   >
-            时：
-            <input id="hinput"  type="text" value="00" style="width:20px"/>
-            分
-            <input id="minput"  type="text" value="00" style="width:20px"/>
-            秒
-            <input id="sinput"  type="text" value="00" style="width:20px"/>
+      <tr id="btn_tr" style="display:block" align="center">
+        <!-- <td width="45%" height="">&nbsp;</td> -->
+	        <td width="100%" align="center" valign="bottom">
+	            <input id="hinput"  type="text" value="00" style="width:20px"/>
+	            小时 
+	            <input id="minput"  type="text" value="00" style="width:20px"/>
+	            分钟 
+	            <input id="sinput"  type="text" value="00" style="width:20px"/>
+	            秒
 
-						<br />
-            <input id="setB" type="button" value="设置" onclick="setTime()">
-            <input id="startB" type="button" value="开始" onclick="run()">
-            <input id="pauseB" type="button" value="暂停" onclick="pause()">
-            <input id="endB" type="button" value="停止" onclick="stop()">
-            <br />
-            <!--<input id="fullscreenB" type="button" value="FullScreen" onclick="fullscreen()">-->
-            <input id="hiddenB" type="button" value="隐藏控制面板" onclick="hid('btn_tr')">
-            <br>
-            <input id="clockHidden" type="hidden" value="00:00:00">
-        </td>
-        <td width="5%">&nbsp;</td>
+							<br />
+	            <input id="setB" type="button" value="设置" onclick="setTime()">
+	            <input id="startB" type="button" value="开始" onclick="run()">
+	            <input id="pauseB" type="button" value="暂停" onclick="pause()">
+	            <input id="endB" type="button" value="停止" onclick="stop()">
+	            <br />
+	            <!--<input id="fullscreenB" type="button" value="FullScreen" onclick="fullscreen()">-->
+	            <input id="hiddenB" type="button" value="隐藏控制面板" onclick="hid('btn_tr')">
+	            <br>
+	            <input id="clockHidden" type="hidden" value="00:00:00">
+	        </td>
+        <!-- <td width="36%">&nbsp;</td> -->
       </tr>
     </table></td>
   </tr>
+  
 
 </table>
 
