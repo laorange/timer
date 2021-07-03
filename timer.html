@@ -15,7 +15,8 @@
 
 <body bgcolor="#EFEFEF"  >
 
-<table width="100%" height="100%" border="0"   onmousedown="show('btn_tr')" style="cursor:pointer"  >
+
+<table width="100%" height="1000px" border="0"   onmousedown="show('btn_tr')" style="cursor:pointer"  >
   <tr >
     <td width="10%" height="150" align="left" valign="top">&nbsp;</td>
     <td width="80%">&nbsp;</td>
@@ -36,7 +37,7 @@
     <td colspan="3" ><table width="100%" border="0" height="122" >
       <tr id="btn_tr" style="display:block" align="center">
         <!-- <td width="45%" height="">&nbsp;</td> -->
-	        <td width="100%" align="center" valign="bottom">
+	        <td width="100%" align="center" valign="bottom" bgcolor="#EFEFEF" style="padding: 10px">
 	            <input id="hinput"  type="text" value="00" style="width:20px"/>
 	            小时 
 	            <input id="minput"  type="text" value="00" style="width:20px"/>
@@ -49,7 +50,9 @@
 	            <input id="startB" type="button" value="开始" onclick="run()">
 	            <input id="pauseB" type="button" value="暂停" onclick="pause()">
 	            <input id="endB" type="button" value="停止" onclick="stop()">
-	            <br />
+	            <br>
+	            <div style="background-color: #EFEFEF">改变背景颜色<input type="color" id="onchange" value="#EFEFEF"></div>
+	            <br>
 	            <!--<input id="fullscreenB" type="button" value="FullScreen" onclick="fullscreen()">-->
 	            <input id="hiddenB" type="button" value="隐藏控制面板" onclick="hid('btn_tr')">
 	            <br>
@@ -67,7 +70,13 @@
 <input id="diff" type="text">
 <input id="next" type="text">
 -->
-
+<script type="text/javascript">
+    document.getElementById('onchange').onchange = function(){
+        document.getElementById('onchange').click();
+        document.body.style.background = this.value;
+    };
+</script>
+<!-- 版权声明：上段js来自CSDN博主「米米余」的原创文章，遵循CC 4.0 BY-SA版权协议，原文链接：https://blog.csdn.net/qq_37017864/article/details/70821346 -->
 <script language="Javascript">
 
 var normalelapse = 1000;
